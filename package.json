@@ -1,0 +1,24 @@
+{
+  "name": "patterns",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@motionone/solid": "^10.16.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@solidjs/router": "^0.13.6",
+    "motion": "^10.18.0",
+    "solid-js": "^1.8.15",
+    "solid-motionone": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
