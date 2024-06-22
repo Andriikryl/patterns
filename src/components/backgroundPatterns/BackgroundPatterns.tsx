@@ -6,7 +6,7 @@ import Prev from "../../icons/Prev";
 export default function BackgroundPatterns() {
   const [backColor, setBackColor] = createSignal("rgb(229, 229, 247)");
   const [frontColor, setFrontColor] = createSignal("rgb(68, 76, 247)");
-  const [opacity, setOpacity] = createSignal(0.8);
+  const [opacity, setOpacity] = createSignal(1);
   const [spacing, setSpacing] = createSignal(10);
   const [activePattern, setActivePattern] = createSignal(11);
 
@@ -191,6 +191,7 @@ export default function BackgroundPatterns() {
           <h1 class={styles.title}>CSS Background Patterns</h1>
           <div class={styles.form__group}>
             <form
+              class={styles.form}
               onChange={(event) => {
                 event.preventDefault();
               }}
@@ -199,7 +200,7 @@ export default function BackgroundPatterns() {
               <input
                 type="range"
                 id="volume-slider"
-                min={0}
+                min={0.4}
                 max={1}
                 step={0.1}
                 value={opacity()}
@@ -207,6 +208,7 @@ export default function BackgroundPatterns() {
               />
             </form>
             <form
+              class={styles.form}
               onChange={(event) => {
                 event.preventDefault();
               }}
@@ -223,6 +225,7 @@ export default function BackgroundPatterns() {
               />
             </form>
             <form
+              class={styles.form}
               onSubmit={(event) => {
                 event.preventDefault();
               }}
@@ -238,6 +241,7 @@ export default function BackgroundPatterns() {
               />
             </form>
             <form
+              class={styles.form}
               onSubmit={(event) => {
                 event.preventDefault();
               }}
